@@ -77,3 +77,36 @@ if my_name:
 # Переменная содержит ссылку на обьект
 # Получение адреса обьекта:
 print(id(my_name))
+
+# КОНВЕРТАЦИЯ ТИПОВ
+# PYTHON не выполняет неявную конвертацию типов значений
+# Встроенные функции для явной конвертации типов:
+# str()   float()   tuple()
+# int()   list()   set()
+# ...
+
+# пример 1
+# print('10' + 5)   # ошибка
+print(5 + int('10'))
+print(str(5) + '10')
+
+# пример 2
+int_num = 6
+float_num = 7.9
+# print(int_num + float_num)
+print(int_num.__add__(float_num))   # NotImplemented
+print(float_num.__radd__(int_num))
+str_val = 'abc'
+print(int_num * str_val)
+
+# пример 3
+bool_val = True
+int_val = 7
+print(bool_val + int_val)
+
+#  МАГИЧЕСКИЕ МЕТОДЫ - внутренние методы классов и они обычно не вызываются явно
+# Например:
+# __add__()   __eq__()   __and__()
+# __str__()   __neq__()   __or__()
+# ...
+print(dir(bool))
