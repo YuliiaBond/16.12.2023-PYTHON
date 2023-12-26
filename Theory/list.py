@@ -31,7 +31,11 @@ print(all_fruits)
 
 
 # МЕТОДЫ СПИСКОВ обьекты наследуют от класса List
-# append
+numbs = [1, 3, 5, 7]
+print(numbs)
+# append   добавление новых элементов
+numbs.append(9)
+print(numbs)
 # pop
 # remove
 # insert
