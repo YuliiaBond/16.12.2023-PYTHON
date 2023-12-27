@@ -36,8 +36,12 @@ print(numbs)
 # append   добавление новых элементов
 numbs.append(9)
 print(numbs)
-# pop
+# pop  удаление элемента с конца
+numbs.pop(-3)
+print(numbs)
 # remove
+# numbs.remove(2)
+# print(numbs)
 # insert
 # sort
 # index
