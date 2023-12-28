@@ -33,19 +33,20 @@ print(all_fruits)
 # МЕТОДЫ СПИСКОВ обьекты наследуют от класса List
 numbs = [1, 3, 5, 7]
 print(numbs)
-# append   добавление новых элементов в конец списка
+# append   добавление новых элементов в конец списка (изменяет)
 numbs.append(9)
 print(numbs)
-# pop  удаление элемента по индексу
+# pop  удаление элемента по индексу (изменяет)
 numbs.pop()   # удалиться последний элемент
-removed_element = numbs.pop(0)
+removed_element = numbs.pop(0)   # удалит по индексу
 print(removed_element)
 print(numbs)
 # remove
 # numbs.remove(2)
 # print(numbs)
 # insert
-# sort
+# sort   сортировка элементов
+
 # index
 # clear
 # copy
