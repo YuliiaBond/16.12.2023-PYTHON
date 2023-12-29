@@ -46,7 +46,7 @@ print(numbs)
 # print(numbs)
 # insert
 # sort   сортировка элементов
-
+print(numbs.sort())
 # index
 # clear
 # copy
