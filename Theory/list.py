@@ -45,8 +45,12 @@ print(numbs)
 # numbs.remove(2)
 # print(numbs)
 # insert
-# sort   сортировка элементов
-print(numbs.sort())
+# sort   сортировка элементов по порядку возрастания (изменяет)
+posts_ids = [245, 151, 765, 178]
+posts_ids.sort()
+print(posts_ids)
+posts_ids.sort(reverse=True)  # сортировка по убыванмю
+print(posts_ids)
 # index
 # clear
 # copy
