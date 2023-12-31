@@ -57,3 +57,79 @@ print(posts_ids)
 # extend
 # reverse
 # count
+
+
+# КОНВЕРТАЦИЯ В СПИСКАХ
+
+greeting = "Hello from Python"   # строка в список
+greeting_letters = list(greeting)
+print(greeting_letters)
+
+# словарь в список, получаем только ключи, значения исчежают
+my_dict = {'a': 10, 'b': True}
+my_dict_keys = list(my_dict)
+print(my_dict_keys)
+
+
+# АРИФМЕТИЧЕСКИЕ ОПЕРАЦИИ В СПИСКАХ
+
+rating = [2.5, 6.0, 5.9, 4.2]
+print(min(rating))
+print(max(rating))
+print(sum(rating))
+print(sum(rating)/len(rating))
+
+
+# ОБЬЕДИНЕНИЕ СПИСКОВ
+
+my_ratings = [2.5, 5.0]
+other_ratings = [7.8, 4.2, 1.8]
+all_ratings = my_ratings + other_ratings
+print(all_ratings)
+
+# НАРЕЗКА СПИСКОВ
+
+ratings = [2.5, 6.0, 5.9, 4.2]
+first_two_ratings = ratings[:2]
+print(first_two_ratings)
+middle_ratings = ratings[1:-1]
+print(middle_ratings)
+last_two_ratings = ratings[-2:]
+print(last_two_ratings)
+
+
+# КОПИРОВАНИЕ СПИСКОВ
+
+my_cars = ['BMW', 'Mercedes']
+copied_cars = my_cars   # ссылаются на одно место в памяти
+copied_cars.append('Audi')
+print(copied_cars)
+print(my_cars)
+print(id(my_cars) == id(copied_cars))
+
+# копирование в новый список, вариант 1
+my_cars2 = ['BMW', 'Mercedes']
+# создаем новый список, а не копируем (использую slice)
+copied_cars2 = my_cars2[:]
+copied_cars2.append('Audi')
+print(copied_cars2)
+print(my_cars2)
+print(id(my_cars2) == id(copied_cars2))
+
+# копирование в новый список, вариант 2
+my_cars3 = ['BMW', 'Mercedes']
+# создаем новый список через метод copy
+copied_cars3 = my_cars3.copy()
+copied_cars3.append('Audi')
+print(copied_cars3)
+print(my_cars3)
+print(id(my_cars3) == id(copied_cars3))
+
+# копирование в новый список, вариант 3
+my_cars4 = ['BMW', 'Mercedes']
+# создаем новый список через встроенную функцию list
+copied_cars4 = list(my_cars4)
+copied_cars4.append('Audi')
+print(copied_cars4)
+print(my_cars4)
+print(id(my_cars4) == id(copied_cars4))
