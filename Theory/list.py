@@ -10,6 +10,8 @@ print(my_fruits == other_fruits)
 print(my_fruits[0] == other_fruits[1])
 print(user_inputs[-1])
 
+print(dir(my_fruits))   # посмотреть методы списка
+
 print(len(posts_ids))   # длина списка
 
 print(user_inputs)
@@ -44,7 +46,10 @@ print(numbs)
 # remove
 # numbs.remove(2)
 # print(numbs)
-# insert
+# insert   вставляет обьект перед указанным индексом
+my_nums = [10, 50, 0, 5, 100]
+my_nums.insert(2, -7)
+print(my_nums)
 # sort   сортировка элементов по порядку возрастания (изменяет)
 posts_ids = [245, 151, 765, 178]
 posts_ids.sort()
@@ -52,11 +57,24 @@ print(posts_ids)
 posts_ids.sort(reverse=True)  # сортировка по убыванмю
 print(posts_ids)
 # index
-# clear
-# copy
-# extend
+# clear   очищает список
+my_nums = [10, 50, 0, 5, 100]
+my_nums.clear()
+print(my_nums)
+# copy  копируем список, не изменяет
+my_nums = [10, 50, 0, 5, 100]
+other_nums = my_nums.copy()
+print(id(my_nums))
+print(id(other_nums))
+# extend   расширить список, добавляя элементы другой последовательности
+my_nums = [10, 50, 0, 5, 100]
+my_nums.extend('abc')
+print(my_nums)
 # reverse
-# count
+# count   сколько раз в списке повторяется элемент
+my_nums = [10, 50, 0, 5, 5, 100]
+res = my_nums.count(5)
+print(res)
 
 
 # КОНВЕРТАЦИЯ В СПИСКАХ
