@@ -49,3 +49,26 @@ my_motorbike2 = {
     'engine_vol': 1.2,
 }
 print(my_motorbike2['price_info']['price'])
+
+# Использование переменных
+brand = 'Honda'
+price = 20000
+engine_vol = 1.2
+my_motorbike3 = {
+    'brand': brand,
+    'price': price,
+    'engine_vol': engine_vol}
+print(my_motorbike3)
+
+# Длина словаря (показывает пары ключ-знвчение)
+print(len(my_motorbike3))
+
+# Несуществующие ключи
+# print(my_motorbike3['model'])  # будет ошибка и код не будет выполняться дальше
+print(my_motorbike3.get('model'))  # ошибку не выдает, показывает None
+print(my_motorbike3.get('brand'))
+print(my_motorbike3.get('qwe', 0))  # вернеть вместо None 0
+
+# Атрибут __doc__
+my_dict = {}
+print(my_dict.__doc__)  # ф-ция конструктор для создания новых словарей
